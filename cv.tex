@@ -54,7 +54,7 @@
 \begin{minipage}[t]{.82\textwidth}
 {\textbf{#2}} -- \textcolor{maincolor}{#3}\\
 {#4}
-\end{minipage}
+\end{minipage}\\
 \vspace{0.2cm}
 }
 
@@ -80,6 +80,7 @@
 \newcommand\linkedin[1]{\def\@linkedin{#1}}
 \newcommand\github[1]{\def\@github{#1}}
 \newcommand\gitlab[1]{\def\@gitlab{#1}}
+\newcommand\orchid[1]{\def\@orcid{#1}}
 \newcommand{\cvtitle}
 {
 \begin{minipage}{.30\textwidth}
@@ -90,7 +91,7 @@
     \noindent
 \begin{minipage}{.68\textwidth}
 \raggedright 
-    {\textcolor{maincolor}{\Large\textbf{\@author}, \@degree}}\\
+    {\textcolor{maincolor}{\huge\textbf{\@author, \@degree}}}\\
     \vspace{0.2cm}
     \begin{minipage}{.48\textwidth}
 	    {{\@date}}\\
@@ -104,7 +105,8 @@
         \raggedright
 	    \textbf{Gitlab:} \@gitlab\\
 	    \textbf{Github:} \@github\\
-	    \textbf{LinkedIn:} \@linkedin
+	    \textbf{LinkedIn:} \@linkedin\\
+	    \textbf{Orcid:} \@orcid
 	\end{minipage}
 	\vspace{0.2cm}
 \end{minipage}
@@ -122,6 +124,7 @@
 \gitlab{janedoe}
 \linkedin{janedoe}
 \fig{images/creep.png}
+\orchid{0000-0000-0000-0000}
 
 
 \begin{document}
